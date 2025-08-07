@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>📚 My Book Tracker</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">My Books</a>
+      <a href="#">Add Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome, Reader!</h2>
+      <p>Track the books you’ve read, plan your next read, and grow your bookshelf.</p>
+    </section>
+
+    <section class="book-list">
+      <h2>My Book List</h2>
+      <div class="book-cards">
+        <div class="book-card">
+          <h3>The Alchemist</h3>
+          <p><strong>Author:</strong> Paulo Coelho</p>
+          <p><strong>Status:</strong> Completed</p>
+        </div>
+        <div class="book-card">
+          <h3>Atomic Habits</h3>
+          <p><strong>Author:</strong> James Clear</p>
+          <p><strong>Status:</strong> Currently Reading</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="add-book">
+      <h2>Add a New Book</h2>
+      <form>
+        <input type="text" placeholder="Book Title" required />
+        <input type="text" placeholder="Author" required />
+        <select required>
+          <option value="">Select Status</option>
+          <option value="reading">Currently Reading</option>
+          <option value="completed">Completed</option>
+          <option value="wishlist">Wishlist</option>
+        </select>
+        <button disabled>Add Book</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Book Tracker App. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
